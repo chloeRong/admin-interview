@@ -34,6 +34,14 @@ git commit -m 'delete a file'
 git checkout -- file 让file 回到最近一次的git commit 或git add 时的状态
 
 git diff HEAD -- file 查看file 的工作区和版本库里最新版本的区别
+
+git remote add alias ‘git地址’ 给仓库起一个别名
+git push -u alias master 将本地master仓库推到远程仓库
+
+git clone 'git地址' 克隆远程仓库到本地
+
+git pull 'git地址' master 拉取远程代码到本地
+
   
 
 
