@@ -42,6 +42,14 @@ git clone 'git地址' 克隆远程仓库到本地
 
 git pull 'git地址' master 拉取远程代码到本地
 
+git log 查看改动的日志
+git log --pretty=online 格式化查看日志
+
+git reset --hard HEAD^^^^^ 有几个^表示切换到前几个版本去
+git reset --hard 版本号 切换到哪一个版本
+
+git reflog 查看所有日志
+
   
 
 
