@@ -30,7 +30,7 @@ git config --global user.email 'your email'
 2.  git常用命令
 
 ```
-git add . 将本地文件提交到暂存区
+gitgit add . 将本地文件提交到暂存区
 git commit -m 'add/modify a file' 将暂存区的文件提交到版本库
 
 git rm '文件名' 删除一个文件
@@ -52,10 +52,16 @@ git log 查看改动的日志
 git log --pretty=online 格式化查看日志
 git reflog 查看所有日志
 
+配置公钥免密码登录
+git remote remove inter
+git remote add inter 'ssh地址' //注意这是ssh 地址
+ssh-keygen -t rsa -C '配置git时的邮箱地址'
+然后将生成的公钥 在远程仓库的控制台进行配置
+
 切换版本
 git reset --hard HEAD^^^^^ 有几个^表示切换到前几个版本去
 git reset --hard 版本号 切换到哪一个版本
-git
+
 分支管理
  git branch 查看分支
  git branch wechat  // 创建一个wechat分支
