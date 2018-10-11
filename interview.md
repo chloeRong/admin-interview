@@ -19,12 +19,17 @@ git config --global user.email 'your email'
 
 1.  创建版本库
 
+    ```
+    比如在d盘下有个文件夹 rrdai 需要版本控制
+    cd d: 当前目录定位到D盘下
+    mkdir rrdai 新建建rrdai文件夹
+    cd rrdai 定位到rrdai文件夹下
+    git init 初始化一个空的版本库
+    ```
+
+2.  git常用命令
+
 ```
-比如在d盘下有个文件夹 rrdai 需要版本控制
-cd d: 当前目录定位到D盘下
-mkdir rrdai 新建建rrdai文件夹
-cd rrdai 定位到rrdai文件夹下
-git init 初始化一个空的版本库
 git add . 将本地文件提交到暂存区
 git commit -m 'add/modify a file' 将暂存区的文件提交到版本库
 
