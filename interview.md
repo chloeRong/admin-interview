@@ -37,28 +37,40 @@ git rm '文件名' 删除一个文件
 git commit -m 'delete a file'
 
 git checkout -- file 让file 回到最近一次的git commit 或git add 时的状态
-
 git diff HEAD -- file 查看file 的工作区和版本库里最新版本的区别
 
-git remote add alias ‘git地址’ 给仓库起一个别名
+远程管理
+git remote add interveiw ‘git地址’ 给仓库起一个别名叫interview
 git push -u alias master 将本地master仓库推到远程仓库
-
 git clone 'git地址' 克隆远程仓库到本地
-
 git pull 'git地址' master 拉取远程代码到本地
+git remote  查看远程仓库
+git remote -v 查看远程仓库别名
+git remote remove interview 删除仓库的别名（interview）
 
 git log 查看改动的日志
 git log --pretty=online 格式化查看日志
-
-git reset --hard HEAD^^^^^ 有几个^表示切换到前几个版本去
-git reset --hard 版本号 切换到哪一个版本
-
 git reflog 查看所有日志
 
-  
-
-
+切换版本
+git reset --hard HEAD^^^^^ 有几个^表示切换到前几个版本去
+git reset --hard 版本号 切换到哪一个版本
+git
+分支管理
+ git branch 查看分支
+ git branch wechat  // 创建一个wechat分支
+ git checkout wechat //切换到wechat分支
+ git merge wechat // 切换到master上合并wechat分支
 
 ```
 
-​    
+###     svn 和git区别
+
+svn 是集中式版本控制系统 git是分布式版本控制系统
+
+主要区别：
+
+- **Git 只关心文件数据的整体是否发生变化，而SVN这类版本控制系统则只关心文件内容的具体差异**
+- **在Git 中的绝大多数操作都只需要访问本地文件和资源，不必联网就可以看到所有的历史版本记录，而SVN 却需要联网**
+- **SVN 断开网络或者断开VPN就无法commit代码，但是Git 可以先commit到本地仓库**
+
