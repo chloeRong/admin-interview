@@ -9,7 +9,7 @@ let obj = {
 }
 
 // 将对象转化为数组
-var arr = obj,entries(obj)
+var arr = obj.entries(obj)
 
 // 将对象的值转换为数组
 var arr = []
@@ -62,7 +62,8 @@ console.log(fdinMinMax(arr)) // {minSum: 14,maxSum: 20}
 
   ##### 
 
-##### 如何实现链式调用
+- ##### 如何实现链式调用
+
 
 ```
 var obj = {
@@ -96,10 +97,23 @@ obj,getA().getB() // 1,2
 
 ```
 
-##### 求数组中的最小值
+- ##### 求数组中的最小值
+
 
 ```
 ES5 写法 var min = Math.min(null,[1,4,5,3,8]) // 1
 ES6 写法 var min = Math.min(...[1,4,5,3,8]) // 1
 ```
 
+- ##### 合并两个数组
+
+```
+ES5写法  Array.prototype.push.apply(arr1, arr2) // arr1的合并arr2的新数组
+Es6写法  arr1.push(...arr1);
+```
+
+
+
+##### 
+
+##### 
