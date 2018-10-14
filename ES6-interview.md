@@ -9,7 +9,7 @@ let obj = {
 }
 
 // 将对象转化为数组
-var arr = obj,entries(obj)
+var arr = obj.entries(obj)
 
 // 将对象的值转换为数组
 var arr = []
