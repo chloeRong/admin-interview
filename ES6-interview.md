@@ -88,7 +88,7 @@ var obj = {
     getA(){
         console.log(this.a)
         return this;
-    }
+    }      
     getB(){
         console.log(this.b)
     }
@@ -105,15 +105,5 @@ ES5 写法 var min = Math.min(null,[1,4,5,3,8]) // 1
 ES6 写法 var min = Math.min(...[1,4,5,3,8]) // 1
 ```
 
-- ##### 合并两个数组
+- #####  安装最新的版本 npm i npm g
 
-```
-ES5写法  Array.prototype.push.apply(arr1, arr2) // arr1的合并arr2的新数组
-Es6写法  arr1.push(...arr1);
-```
-
-
-
-##### 
-
-##### 
