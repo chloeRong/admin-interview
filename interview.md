@@ -90,4 +90,17 @@ BFC形成条件：浮动元素，绝对定位元素，displayinline-block,table-
 
 BFC的作用： 包含浮动元素 不被浮动元素所覆盖，阻止外边距折叠
 
-​
+### Promise对象
+
+概念：Promise异步编程的一种解决办法；同时也是一个对象
+
+三种状态： Pending(未开始，未执行) ,Resolved(已完成)，Rejected（已失败）
+
+两种结果：Fulfilled成功, Rejected 失败
+
+优点：解决回调地狱的问题，更好进行错误捕获
+
+缺点：无法取消Promise, 必须设置回调函数
+
+案例: 封装ajax，图片异步加载的案例
+
