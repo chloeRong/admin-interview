@@ -9,7 +9,11 @@ let obj = {
 }
 
 // 将对象转化为数组
+<<<<<<< HEAD
 var arr = obj.entries(obj)
+=======
+var arr = obj.entries(obj) // [['a',1],['b',2]]
+>>>>>>> 44533e2860e204fa68afa59ede73ef98dfa0af10
 
 // 将对象的值转换为数组
 var arr = []
@@ -62,7 +66,8 @@ console.log(fdinMinMax(arr)) // {minSum: 14,maxSum: 20}
 
   ##### 
 
-##### 如何实现链式调用
+- ##### 如何实现链式调用
+
 
 ```
 var obj = {
@@ -87,7 +92,7 @@ var obj = {
     getA(){
         console.log(this.a)
         return this;
-    }
+    }      
     getB(){
         console.log(this.b)
     }
@@ -96,10 +101,31 @@ obj,getA().getB() // 1,2
 
 ```
 
-##### 求数组中的最小值
+- ##### 求数组中的最小值
+
 
 ```
 ES5 写法 var min = Math.min(null,[1,4,5,3,8]) // 1
 ES6 写法 var min = Math.min(...[1,4,5,3,8]) // 1
+```
+
+- #####  安装最新的版本 npm i npm g
+
+- #####  Promise对象
+
+
+```
+概念：Promise异步编程的一种解决办法；同时也是一个对象
+
+三种状态： Pending(未开始，未执行) ,Resolved(已完成)，Rejected（已失败）
+
+两种结果：Fulfilled成功, Rejected 失败
+
+优点：解决回调地狱的问题，更好进行错误捕获
+
+缺点：无法取消Promise, 必须设置回调函数
+
+案例: 封装ajax，图片异步加载的案例
+
 ```
 
