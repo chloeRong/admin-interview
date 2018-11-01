@@ -90,17 +90,57 @@ BFC形成条件：浮动元素，绝对定位元素，displayinline-block,table-
 
 BFC的作用： 包含浮动元素 不被浮动元素所覆盖，阻止外边距折叠
 
-### Promise对象
+### 字符串截取函数
 
-概念：Promise异步编程的一种解决办法；同时也是一个对象
+常用 函数：substr(), substring(), slice()
 
-三种状态： Pending(未开始，未执行) ,Resolved(已完成)，Rejected（已失败）
+slice(start, end), 第一参数代表开始位置，第二个 代表参数结束位置的下一个位置
 
-两种结果：Fulfilled成功, Rejected 失败
+substring() 第一个参数代表开始位置，第二参数 代表结束位置的下一个位置 
 
-优点：解决回调地狱的问题，更好进行错误捕获
+substr() 第一个参数代表开始位置，第二参数 代表 截取的长度
 
-缺点：无法取消Promise, 必须设置回调函数
+区别：
 
-案例: 封装ajax，图片异步加载的案例
+slice()和 substring()的区别
 
+slice()参数如果为负数： 则参数值加上字符串本身的长度，再截取，若第一个参数大于第二参数，则返回空字符串
+
+substring()参数如果为负数，则参数转为0，取较小值作为开始位置。
+
+
+
+### 什么是盒子模型
+
+盒子模型分为W3C标准盒子模型和IE盒子模型
+
+概念： 所有的HTML元素可以看做盒子，css中，css盒模型本质上是一个盒子，封装周围的HTML元素，它包括边距，边框，填充，和实际内容。
+
+W3C标准盒子模型：
+
+属性width,height只包含内容content,不包含border和padding
+
+IE盒子模型
+
+属性width,height包含内容content，内边距padding，边框border
+
+> 避免触发IE盒模型的方法是使用<!DOCTYPE html>声明，告诉IE采用W3C盒子模型即可。
+
+### @import和link的区别
+
+#### 区别
+
+**1.从属关系区别**
+`@import`是 CSS 提供的语法规则，只有导入样式表的作用；`link`是HTML提供的标签，不仅可以加载 CSS 文件，还可以定义 RSS、rel 连接属性等。
+
+**2.加载顺序区别**
+加载页面时，`link`标签引入的 CSS 被同时加载；`@import`引入的 CSS 将在页面加载完毕后被加载。
+
+**3.兼容性区别**
+`@import`是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；`link`标签作为 HTML 元素，不存在兼容性问题。
+
+**4.DOM可控性区别**
+可以通过 JS 操作 DOM ，插入`link`标签来改变样式；由于 DOM 方法是基于文档的，无法使用`@import`的方式插入样式。
+
+**5.权重区别(该项有争议，下文将详解)**
+`link`引入的样式权重大于`@import`引入的样式。

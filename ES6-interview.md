@@ -107,3 +107,21 @@ ES6 写法 var min = Math.min(...[1,4,5,3,8]) // 1
 
 - #####  安装最新的版本 npm i npm g
 
+- #####  Promise对象
+
+
+```
+概念：Promise异步编程的一种解决办法；同时也是一个对象
+
+三种状态： Pending(未开始，未执行) ,Resolved(已完成)，Rejected（已失败）
+
+两种结果：Fulfilled成功, Rejected 失败
+
+优点：解决回调地狱的问题，更好进行错误捕获
+
+缺点：无法取消Promise, 必须设置回调函数
+
+案例: 封装ajax，图片异步加载的案例
+
+```
+
