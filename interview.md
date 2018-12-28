@@ -1,4 +1,4 @@
-## vue 中computed和watch的区别
+﻿## vue 中computed和watch的区别
 
 1.computed是计算一个新的属性，并将该属性挂载到vm(Vue实例)上，而watch是监听已经存在且已经挂载到vm上的数据，所以用watch同样可以监听computed计算属性的变化（其他还有data，props）。
 
@@ -30,7 +30,7 @@ git config --global user.email 'your email'
 2.  git常用命令
 
 ```
-gitgit add . 将本地文件提交到暂存区
+git add . 将本地文件提交到暂存区
 git commit -m 'add/modify a file' 将暂存区的文件提交到版本库
 
 git rm '文件名' 删除一个文件
@@ -107,9 +107,6 @@ slice()和 substring()的区别
 slice()参数如果为负数： 则参数值加上字符串本身的长度，再截取，若第一个参数大于第二参数，则返回空字符串
 
 substring()参数如果为负数，则参数转为0，取较小值作为开始位置。
-
-
-
 ### 什么是盒子模型
 
 盒子模型分为W3C标准盒子模型和IE盒子模型
