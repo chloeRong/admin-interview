@@ -30,6 +30,7 @@ git config --global user.email 'your email'
 2.  git常用命令
 
 ```
+git status 查看本地文件的变化状态
 git add . 将本地文件提交到暂存区
 git commit -m 'add/modify a file' 将暂存区的文件提交到版本库
 
