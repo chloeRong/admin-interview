@@ -59,6 +59,7 @@ git reflog 查看所有日志
 git remote remove inter
 git remote add inter 'ssh地址' //注意这是ssh 地址
 ssh-keygen -t rsa -C '配置git时的邮箱地址'
+(Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.)
 然后将生成的公钥 在远程仓库的控制台进行配置
 
 切换版本
