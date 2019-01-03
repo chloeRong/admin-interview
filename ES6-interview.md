@@ -9,11 +9,8 @@ let obj = {
 }
 
 // 将对象转化为数组
-<<<<<<< HEAD
 var arr = obj.entries(obj)
-=======
 var arr = obj.entries(obj) // [['a',1],['b',2]]
->>>>>>> 44533e2860e204fa68afa59ede73ef98dfa0af10
 
 // 将对象的值转换为数组
 var arr = []
