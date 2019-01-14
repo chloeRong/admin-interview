@@ -1,4 +1,4 @@
-﻿## vue 中computed和watch的区别
+## vue 中computed和watch的区别
 
 1.computed是计算一个新的属性，并将该属性挂载到vm(Vue实例)上，而watch是监听已经存在且已经挂载到vm上的数据，所以用watch同样可以监听computed计算属性的变化（其他还有data，props）。
 
@@ -144,4 +144,4 @@ IE盒子模型
 可以通过 JS 操作 DOM ，插入`link`标签来改变样式；由于 DOM 方法是基于文档的，无法使用`@import`的方式插入样式。
 
 **5.权重区别(该项有争议，下文将详解)**
-`link`引入的样式权重大于`@import`引入的样式。
+`link`引入的样式权重大于`@import`引入的样式。 
