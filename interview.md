@@ -71,6 +71,12 @@ git reset --hard 版本号 切换到哪一个版本
  git branch wechat  // 创建一个wechat分支
  git checkout wechat //切换到wechat分支
  git merge wechat // 切换到master上合并wechat分支
+ 
+ node升级
+ sudo npm cache clean -f 清楚缓存
+ sudo npm install n -g //安装node版本管理工具
+ sudo n stable 安装node最新版版本
+ sudo n 8.9.4 安装node指定版本8.9.4
 
 ```
 
