@@ -51,7 +51,7 @@ console.log(fdinMinMax(arr)) // {minSum: 14,maxSum: 20}
   add(1,2) add(1)(2)
 
   function add(num1,num2){
-      if(num2 && num2){
+      if(num1 && num2){
           return num1+ num2
       }else{
           return function(num3){
@@ -102,7 +102,7 @@ obj,getA().getB() // 1,2
 
 
 ```
-ES5 写法 var min = Math.min(null,[1,4,5,3,8]) // 1
+ES5 写法 var min = Math.min.apply(null,[1,4,5,3,8]) // 1
 ES6 写法 var min = Math.min(...[1,4,5,3,8]) // 1
 ```
 
